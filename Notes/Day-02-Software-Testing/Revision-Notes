@@ -1,0 +1,544 @@
+# Day 2 — Revision Notes
+
+These revision notes are designed for quick interview preparation. They summarize the most important concepts from Day 2 while maintaining enough detail to explain them confidently during interviews.
+
+---
+
+# 1. Introduction to Software Testing
+
+## Definition
+
+Software Testing is the process of verifying and validating a software application to identify defects and ensure it meets specified requirements before release.
+
+---
+
+## Objectives of Software Testing
+
+- Find defects.
+- Verify requirements.
+- Validate user expectations.
+- Improve software quality.
+- Reduce business risks.
+- Increase customer confidence.
+
+---
+
+## Why is Software Testing Important?
+
+- Prevents software failures.
+- Improves product quality.
+- Reduces maintenance costs.
+- Protects business reputation.
+- Improves customer satisfaction.
+
+---
+
+## QA Mindset
+
+A QA Engineer does not test to prove the software works.
+
+A QA Engineer tests to discover situations where the software might fail.
+
+---
+
+## Common Interview Questions
+
+**Q:** What is Software Testing?
+
+**Answer:**
+
+Software Testing is the process of verifying and validating software to identify defects and ensure it meets specified requirements before release.
+
+---
+
+# 2. Verification vs Validation
+
+## Verification
+
+Verification checks documents, designs and code before execution.
+
+Question answered:
+
+> Are we building the product right?
+
+Verification is a **Static Activity**.
+
+---
+
+## Validation
+
+Validation checks the actual software by executing test cases.
+
+Question answered:
+
+> Are we building the right product?
+
+Validation is a **Dynamic Activity**.
+
+---
+
+## Differences
+
+| Verification | Validation |
+|--------------|------------|
+| Static | Dynamic |
+| Reviews documents | Tests software |
+| Prevents defects | Detects defects |
+| Before execution | After development |
+
+---
+
+## Interview Tip
+
+Remember these two sentences exactly:
+
+Verification:
+
+> Are we building the product right?
+
+Validation:
+
+> Are we building the right product?
+
+---
+
+# 3. Software Testing Life Cycle (STLC)
+
+## Definition
+
+STLC is a structured process that defines all testing activities from requirement analysis until test closure.
+
+---
+
+## STLC Phases
+
+1. Requirement Analysis
+2. Test Planning
+3. Test Case Development
+4. Test Environment Setup
+5. Test Execution
+6. Test Closure
+
+---
+
+## Entry Criteria
+
+Conditions that must be satisfied before testing starts.
+
+Examples:
+
+- Approved requirements
+- Test cases ready
+- Environment ready
+- Test data available
+
+---
+
+## Exit Criteria
+
+Conditions that determine testing completion.
+
+Examples:
+
+- Test cases executed
+- Critical defects fixed
+- Test Summary Report completed
+
+---
+
+## Deliverables
+
+- Test Plan
+- Test Cases
+- Test Data
+- Bug Reports
+- Test Summary Report
+- Test Closure Report
+
+---
+
+## Interview Tip
+
+Always remember the order of STLC phases.
+
+Interviewers frequently ask them in sequence.
+
+---
+
+# 4. Defect (Bug) Life Cycle
+
+## Definition
+
+The Defect Life Cycle is the sequence of stages a defect follows from identification until closure.
+
+---
+
+## Bug Life Cycle
+
+- New
+- Assigned
+- Open
+- Fixed
+- Retest
+- Closed
+
+---
+
+## Additional Statuses
+
+- Duplicate
+- Deferred
+- Rejected
+- Reopened
+- Cannot Reproduce
+- Not a Bug
+
+---
+
+## QA Mindset
+
+Reporting a bug is not enough.
+
+QA must verify the fix before closing the defect.
+
+---
+
+## Interview Tip
+
+Remember the sequence:
+
+New → Assigned → Open → Fixed → Retest → Closed
+
+---
+# 5. Severity vs Priority
+
+## Severity
+
+### Definition
+
+Severity defines the degree of technical impact a defect has on the functionality of the software application.
+
+### Severity Levels
+
+- Low
+- Medium
+- High
+- Critical
+
+---
+
+## Priority
+
+### Definition
+
+Priority defines how urgently a defect should be fixed from a business perspective.
+
+### Priority Levels
+
+- Low
+- Medium
+- High
+- Urgent (Immediate)
+
+---
+
+## Severity vs Priority
+
+| Aspect | Severity | Priority |
+|---------|----------|----------|
+| Meaning | Technical impact | Business urgency |
+| Focus | Application functionality | Business needs |
+| Decided By | QA Lead, QA Engineer, Developer | Product Manager, Project Manager, Client |
+| Question | How serious is the defect? | How quickly should it be fixed? |
+
+---
+
+## Important Examples
+
+### High Severity + Low Priority
+
+Employee Remarks page crashes inside the Admin Panel.
+
+- Functionality is affected.
+- Very few users use the feature.
+
+Result:
+
+- Severity = High
+- Priority = Low
+
+---
+
+### Low Severity + High Priority
+
+Company logo is missing before a product launch.
+
+- Application works correctly.
+- Branding is affected.
+
+Result:
+
+- Severity = Low
+- Priority = High
+
+---
+
+## Interview Tip
+
+High Severity does **NOT** always mean High Priority.
+
+Likewise,
+
+Low Severity does **NOT** always mean Low Priority.
+
+---
+
+# 6. Bug Reports
+
+## Definition
+
+A Bug Report is a formal document used by QA Engineers to communicate defects to the development team.
+
+---
+
+## Purpose
+
+A Bug Report helps developers:
+
+- Understand the issue.
+- Reproduce the defect.
+- Investigate efficiently.
+- Fix the defect.
+- Reduce investigation time.
+
+---
+
+## Contents of a Bug Report
+
+- Bug ID
+- Title
+- Environment
+- Preconditions
+- Steps to Reproduce
+- Expected Result
+- Actual Result
+- Severity
+- Priority
+- Attachments
+- Reporter
+- Status
+
+---
+
+## Characteristics of a Good Bug Report
+
+A Bug Report should be:
+
+- Clear
+- Complete
+- Accurate
+- Professional
+- Reproducible
+
+---
+
+## Interview Tip
+
+The most important part of a Bug Report is writing clear and complete **Steps to Reproduce**, because developers should be able to reproduce the defect without asking additional questions.
+
+---
+
+# 7. Test Plan
+
+## Definition
+
+A Test Plan is a project-level document that defines how testing will be performed for a specific project.
+
+---
+
+## Purpose
+
+A Test Plan helps:
+
+- Define testing scope.
+- Plan resources.
+- Assign responsibilities.
+- Define timelines.
+- Identify risks.
+- Organize testing activities.
+
+---
+
+## Prepared By
+
+Usually prepared by:
+
+- QA Lead
+- Test Lead
+- QA Manager
+
+---
+
+## Remember
+
+A Test Plan is created separately for every project.
+
+---
+
+# 8. Test Strategy
+
+## Definition
+
+A Test Strategy is an organization-level document that defines the overall testing approach and standards followed across multiple projects.
+
+---
+
+## Purpose
+
+A Test Strategy helps:
+
+- Standardize testing.
+- Maintain consistency.
+- Define testing standards.
+- Improve quality across projects.
+
+---
+
+## Prepared By
+
+Usually prepared by:
+
+- QA Manager
+- Test Manager
+
+---
+
+## Test Strategy vs Test Plan
+
+| Test Strategy | Test Plan |
+|---------------|-----------|
+| Organization level | Project level |
+| Reused across projects | Created for each project |
+| Defines standards | Defines execution plan |
+| Long-term | Project-specific |
+
+---
+
+# Day 2 Interview Cheat Sheet
+
+## Remember These Definitions
+
+### Software Testing
+
+Verifying and validating software to identify defects and ensure it meets specified requirements.
+
+---
+
+### Verification
+
+Checking documents and work products.
+
+**Question:**
+
+Are we building the product right?
+
+---
+
+### Validation
+
+Testing the actual software.
+
+**Question:**
+
+Are we building the right product?
+
+---
+
+### STLC Phases
+
+1. Requirement Analysis
+2. Test Planning
+3. Test Case Development
+4. Test Environment Setup
+5. Test Execution
+6. Test Closure
+
+---
+
+### Defect Life Cycle
+
+New
+
+↓
+
+Assigned
+
+↓
+
+Open
+
+↓
+
+Fixed
+
+↓
+
+Retest
+
+↓
+
+Closed
+
+---
+
+### Severity
+
+Technical impact of a defect.
+
+---
+
+### Priority
+
+Business urgency of fixing a defect.
+
+---
+
+### Bug Report
+
+Formal document used to communicate software defects.
+
+---
+
+### Test Plan
+
+Project-level testing roadmap.
+
+---
+
+### Test Strategy
+
+Organization-level testing approach.
+
+---
+
+# Final Revision Tips
+
+Before an interview, make sure you can confidently explain:
+
+- What is Software Testing?
+- Verification vs Validation.
+- All STLC phases in order.
+- Defect Life Cycle.
+- Severity vs Priority with examples.
+- Components of a professional Bug Report.
+- Test Plan.
+- Test Strategy.
+- Difference between Test Plan and Test Strategy.
+
+Don't memorize definitions only.
+
+Understand **why** each concept is used and explain it in your own words with simple examples.
+
+---
+
+**End of Revision Notes**
