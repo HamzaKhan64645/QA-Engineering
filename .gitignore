@@ -1,0 +1,19 @@
+# Node.js
+node_modules/
+
+# Playwright
+playwright-report/
+test-results/
+
+# Coverage
+coverage/
+
+# Environment files
+.env
+
+# OS files
+Thumbs.db
+.DS_Store
+
+# VS Code workspace settings (optional)
+.vscode/
